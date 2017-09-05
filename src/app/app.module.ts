@@ -5,12 +5,14 @@ import { RouterOutlet } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { IntroComponent } from './intro/intro.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    IntroComponent
+    IntroComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule
