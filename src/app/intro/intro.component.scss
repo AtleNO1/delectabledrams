@@ -1,3 +1,5 @@
+//@import "~shared_scss/colors.scss";
+
 .intro{
     height: 100vh;
     background: url(~/assets/images/bg.jpg) no-repeat center center fixed;
@@ -5,4 +7,55 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
+
+    #introTxt{
+        h1{
+            position: absolute;
+            top: 60%;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+    
+        h3{
+            color: #c56729;
+            margin-bottom: 5rem;
+    
+            i{
+                color: #e97b36;
+                font-size: 1.5rem;
+            }
+        }
+
+        a{
+            color: rgb(50, 50, 50);
+            background-color: white;
+            text-decoration: none;
+            padding: 1.3rem 5rem;
+            margin-right: 1rem;
+            cursor: pointer;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 5px;
+                background-color: #e97b36;
+                width: 0%;
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                -o-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+            }
+            &:hover{
+                &:after{
+                    content: '';
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
+

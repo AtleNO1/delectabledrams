@@ -9,6 +9,11 @@ export class IntroComponent implements OnInit {
 
   constructor() { }
 
+  scroll(e) {
+    let target = e.target.target;
+    document.getElementById(target).scrollIntoView({behavior: "smooth"});
+  }
+
   ngOnInit() {
   }
 
