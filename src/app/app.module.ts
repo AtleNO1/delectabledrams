@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AlertModule } from 'ngx-bootstrap';  
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -19,7 +19,7 @@ import { ImageService } from './image.service';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    AlertModule.forRoot()
   ],
   providers: [
     ImageService
