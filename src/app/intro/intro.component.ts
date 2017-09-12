@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-intro',
@@ -6,13 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent implements OnInit {
+  constructor(private DataService: DataService) {}
 
-  constructor() { }
-
-  scroll(e) {
-    let target = e.target.target;
-    document.getElementById(target).scrollIntoView({behavior: "smooth"});
-  }
+  // scroll(e) {
+  //   const target = e.target.target;
+  //   document.getElementById(target).scrollIntoView({behavior: 'smooth'});
+  // }
 
   ngOnInit() {
   }

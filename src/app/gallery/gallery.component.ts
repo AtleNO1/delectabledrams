@@ -1,20 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { ImageService } from '../image.service';
+import { DataService } from '../data.service';
+
+import { Image } from '../models/image';
 
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  styleUrls: ['./gallery.component.scss'],
+  providers: [DataService]
 })
 export class GalleryComponent implements OnInit {
-  constructor(private imageService: ImageService) {}
-  
-    islayImgs: any = '';
-    sherriedImgs: any = '';
-    worldImgs: any = '';
+  images: Image[];
+
+  constructor(private DataService: DataService) {}
+
+    // islayImgs: any = '';
+    // sherriedImgs: any = '';
+    // worldImgs: any = '';
+    // whiskyType: any = '';
     ngOnInit() {
-      this.islayImgs = this.imageService.islayImages;
-      this.sherriedImgs = this.imageService.sherriedImages;
-      this.worldImgs = this.imageService.worldImages;
+      this.images = this.DataService.getImages();
+      console.log(this.images);
+      // this.islayImgs = this.DataService.whiskyType[0].islay;
+      // this.sherriedImgs = this.DataService.whiskyType[0].sherried;
+      // this.worldImgs = this.DataService.whiskyType[0].world;
+      // this.whiskyType = this.DataService.whiskyType;
     }
 }

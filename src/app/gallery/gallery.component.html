@@ -1,17 +1,17 @@
 <div class="row my-5">
     <div class="col-12">
-        <div id="islay" class="row my-5">
+        <div class="row my-5">
             <div class="col-lg-4 col-xl-3 galleryTxtBox">
                 <h2>Islay Whiskies</h2>
                 <p>The peaty qualities of Islay whiskies are legendary. Powerful and pungent, if they are to your taste we have a wide selection of interesting bottlings from Islay distilleries that we would love to share with you.</p>
             </div>
-            <div class="imgRow col-xs-6 col-md-6 col-lg-4 col-xl-3" *ngFor="let islay of islayImgs">
-                <img class="img-fluid" src="{{islay.url}}">
+            <div class="imgRow col-xs-6 col-md-6 col-lg-4 col-xl-3" *ngFor="let i of images">
+                <img class="img-fluid" src="{{i}}">
             </div>
         </div>
 
         
-        <div id="sherried" class="row my-5">
+        <!-- <div id="sherried" class="row my-5">
             <div class="col-lg-3 galleryTxtBox">
                 <h2>Sherried Whiskies</h2>
                 <p>A good Sherry matured whisky has a wonderful rich flavour that some people adore. We have some wonderful drams for those of you that appreciate the complex flavours imparted by a good Sherry Cask.</p>
@@ -28,6 +28,6 @@
             <div class="imgRow col-xs-6 col-md-6 col-lg-3" *ngFor="let world of worldImgs">
                 <img class="img-fluid" src="{{world.url}}">
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
