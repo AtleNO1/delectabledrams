@@ -1,4 +1,4 @@
-<div class="row intro">
+<div id="home" class="row intro">
   <div class="col-12">
     <div class="row">
       <div class="col-1"></div>
@@ -8,7 +8,7 @@
     </div>
     <div class="row">
       <div class="col-1"></div>
-      <div class="col-md-10 col-xl-6">
+      <div class="col-md-10 col-xl-7">
         <h3 class="playfairFont">
           <i class="fa fa-quote-left" aria-hidden="true"></i>
             We aim to provide a truly bespoke service, a tasting specifically crafted to your requirements. From well-known names to bottlings from silent distilleries, we have access to a wide range of whiskies and would be delighted to share some of them with you.
@@ -19,7 +19,7 @@
     <div class="row">
       <div class="col-1"></div>
       <div class="col-11">
-        <a href="#">Islay Whisky</a>
+        <a *ngFor="let a of whiskies" [scrollTo]="'#' + a.category" [scrollOffset]="400">{{a.name}}</a>   
       </div>
     </div>
   </div>

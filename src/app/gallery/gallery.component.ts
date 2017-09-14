@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
 import { Whisky } from '../models/whisky';
-import { Image } from '../models/image';
 
 @Component({
   selector: 'app-gallery',
@@ -11,11 +10,11 @@ import { Image } from '../models/image';
   providers: [DataService]
 })
 export class GalleryComponent implements OnInit {
-  images: Whisky[];
+  whiskies: Whisky[];
 
   constructor(private DataService: DataService) {}
 
     ngOnInit() {
-      this.images = this.DataService.getImages();
+      this.whiskies = this.DataService.getImages();
     }
 }

@@ -3,6 +3,7 @@ import { Image } from './models/image';
 
 export const Whiskies: Whisky[] = [
   {
+    category: 'islay',
     name: 'Islay Whiskies',
     desc: 'The peaty qualities of Islay whiskies are legendary. Powerful and pungent, if they are to your taste we have a wide selection of interesting bottlings from Islay distilleries that we would love to share with you.',
       images: [
@@ -12,6 +13,7 @@ export const Whiskies: Whisky[] = [
       ]
   },
   {
+    category: 'sherried',
     name: 'Sherried Whiskies',
     desc: 'A good Sherry matured whisky has a wonderful rich flavour that some people adore. We have some wonderful drams for those of you that appreciate the complex flavours imparted by a good Sherry Cask.',
       images: [
@@ -21,6 +23,7 @@ export const Whiskies: Whisky[] = [
       ]
   },
   {
+    category: 'world',
     name: 'World Whiskies',
     desc: 'There are many places other than Scotland where Whisky is made and the number of distilleries is increasing all the time. We have malt whisky from several countries including some incredible drams from Japan.',
       images: [

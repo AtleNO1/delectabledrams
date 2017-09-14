@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { AlertModule } from 'ngx-bootstrap';
+import { ScrollToModule } from 'ng2-scroll-to-el';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -21,7 +21,7 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
-    AlertModule.forRoot()
+    ScrollToModule.forRoot()
   ],
   providers: [
     DataService

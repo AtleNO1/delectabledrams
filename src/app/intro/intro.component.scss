@@ -1,4 +1,4 @@
-//@import "~shared_scss/colors.scss";
+@import "../../assets/shared_scss/colors.scss";
 
 .intro{
     height: 100vh;
@@ -16,12 +16,11 @@
     }
 
     h3{
-        color: #c56729;
+        color: $theme-orange-lighter;
         margin-bottom: 5rem;
 
         i{
-            color: #e97b36;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 
@@ -39,7 +38,7 @@
             left: 0;
             bottom: 0;
             height: 5px;
-            background-color: #e97b36;
+            background-color: $theme-orange-lighter;
             width: 0%;
             -webkit-transition: all 0.3s ease-in-out 0s;
             -moz-transition: all 0.3s ease-in-out 0s;
