@@ -57,6 +57,13 @@
     }
 }
 
+
+@media (max-width:3000px) and (min-width:1700px) {
+    h3{
+        width: 90% !important;
+    }
+}
+
 //XS - SM
 @media (max-width: 767px) {
     h1{

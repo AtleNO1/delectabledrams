@@ -13,6 +13,10 @@ h2{
         font-size: 2.5rem;
     }
 
+    .card-body{
+        padding: 2rem;
+    }
+
     .underline{
         &:after{
             bottom: -50%;
