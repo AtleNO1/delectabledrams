@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { IntroComponent } from './intro/intro.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { AboutComponent } from './about/about.component';
+import { NgBoxModule } from 'ngbox/ngbox.module';
+import { NgBoxService } from 'ngbox/ngbox.service';
+import { CommonModule } from '@angular/common';
 
 import { DataService } from './data.service';
-import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +24,13 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    NgBoxModule,
+    CommonModule
   ],
   providers: [
-    DataService
+    DataService,
+    NgBoxService
   ],
   bootstrap: [AppComponent]
 })

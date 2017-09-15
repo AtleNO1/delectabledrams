@@ -6,8 +6,10 @@
                 <p>{{a.desc}}</p>
             </div>
             <div class="imgRow col-xs-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let i of a.images">
-                <img class="img-fluid" src="{{i.url}}">
-                <!-- <pre>{{ i | json }}</pre> -->
+               
+                <a ng-box src="{{i.url}}" title="{{a.name}}" group="{{a.category}}">
+                    <img class="img-fluid" src="{{i.url}}" alt="">
+                </a>
             </div>
         </div>
     </div>
