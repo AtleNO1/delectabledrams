@@ -8,8 +8,14 @@ h2{
     margin-bottom: 1.8rem;
     .card-img-top{
         text-align: center;
-        color: $theme-orange-lighter;
+        color: $theme-orange;
         margin-top: 1.5rem;
         font-size: 2.5rem;
+    }
+
+    .underline{
+        &:after{
+            bottom: -50%;
+        }
     }
 }

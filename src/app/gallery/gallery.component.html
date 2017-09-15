@@ -1,11 +1,11 @@
 <div id="whiskySelection" class="row my-5">
-    <div class="col-12">
+    <div class="col-xs-12 col-lg-12">
         <div class="row my-5" *ngFor="let a of whiskies">
-            <div id="{{a.category}}" class="col-lg-4 col-xl-3 galleryTxtBox">
+            <div id="{{a.category}}" class="col-xs-12 col-lg-4 col-xl-3 galleryTxtBox">
                 <h2>{{a.name}}</h2>
                 <p>{{a.desc}}</p>
             </div>
-            <div class="imgRow col-xs-6 col-md-6 col-lg-4 col-xl-3" *ngFor="let i of a.images">
+            <div class="imgRow col-xs-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let i of a.images">
                 <img class="img-fluid" src="{{i.url}}">
                 <!-- <pre>{{ i | json }}</pre> -->
             </div>
