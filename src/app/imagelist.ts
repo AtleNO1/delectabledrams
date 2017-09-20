@@ -3,6 +3,16 @@ import { Image } from './models/image';
 
 export const Whiskies: Whisky[] = [
   {
+    category: 'intro',
+    name: 'Introductory Whiskies',
+    desc: 'Try whiskies from the different regions of Scotland. We’ll select some interesting drams to give you a wide selection of styles and flavours to help you explore the depth of this wonderful drink.',
+      images: [
+        {url: './assets/images/gallery/intro0.jpg'},
+        {url: './assets/images/gallery/intro1.jpg'},
+        {url: './assets/images/gallery/intro2.jpg'}
+      ]
+  },
+  {
     category: 'islay',
     name: 'Islay Whiskies',
     desc: 'The peaty qualities of Islay whiskies are legendary. Powerful and pungent, if they are to your taste we have a wide selection of interesting bottlings from Islay distilleries that we would love to share with you.',
