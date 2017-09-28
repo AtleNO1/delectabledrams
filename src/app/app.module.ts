@@ -13,6 +13,7 @@ import { NgBoxService } from 'ngbox/ngbox.service';
 import { CommonModule } from '@angular/common';
 
 import { DataService } from './data.service';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DataService } from './data.service';
     NavComponent,
     IntroComponent,
     GalleryComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

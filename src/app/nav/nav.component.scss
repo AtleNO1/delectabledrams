@@ -35,4 +35,15 @@
         transform: rotate(45deg) translate(-7px, -7px);
         background-color: $theme-orange;
     }
+
+    .navbar-media{
+        a{
+            color: rgba(0, 0, 0, 0.5);
+            margin-right: 1rem;
+            &:hover{
+                text-decoration: none;
+                color: $theme-orange;
+            }
+        }
+    }
 }

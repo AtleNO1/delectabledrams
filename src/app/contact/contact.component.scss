@@ -1,0 +1,60 @@
+@import "../../assets/shared_scss/colors.scss";
+
+#contact{
+    height: 100vh;
+    background: url(../../assets/images/gallery/world0.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+
+    .contactContent{
+        position: absolute;
+        top: 35%;
+    }
+
+    h2{
+        color: white;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+    }
+
+    a{
+        background-color: white;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        &:hover{
+            color: $theme-orange;
+        }
+        i{
+            margin-right: 0.5rem;
+            color: $theme-orange;
+        }
+    }
+}
+
+//XS - SM
+@media (max-width: 767px) {
+    #contact{
+        a{
+            background-color: white;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            display: inline-block;
+            margin-bottom: 0.3rem;
+            &:hover{
+                color: $theme-orange;
+            }
+            i{
+                margin-right: 0.5rem;
+                color: $theme-orange;
+            }
+        }
+    }
+}
